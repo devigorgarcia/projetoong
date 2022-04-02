@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --header-bgColor: #C4C4C4;
+    --header-font: 'Poppins', sans-serif;
+    --primaryColor-fontColor: #363636;
+    --secondColor-bgSearchBtn: #363636;
+    --secondColor-fontColor: #FFFFFF;
+    --mainGray-bgColor: #dedede;
+    --mainWhite-bgColor: #f8f8f8;
+}
+
+body {
+    font-family: var(--header-font);
+}
+
+/* Headers */
+
+header {
+   background-color: var(--header-bgColor);
+   width: 100vw;
+   height: 5vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;  
+}
+
+.header-logo img {
+    padding: 11px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.header-nav {
+    width: 33vw;
+}
+
+#header-nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-nav-menu a {
+    text-decoration: none;
+    font-size: 16px;
+    color:  black;
+    font-weight: 700;
+}
+
+.header-login {
+    width: 33vw;
+}
+
+#header-login-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 16px;
+}
+
+#header-login-area a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-login-newPlace {
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+.header-login-login {
+    width: 16px;
+    height: 16px;
+    padding: 10px;    
+    background-color: white;
+    border-radius: 100%;
+}
+
+.header-login-acessibility a {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#main {
+   
+}
+
+/* Main Search */
+#main-search {
+    background-color: #dedede;
+    height: 60vh;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-search-searchPlace {
+    width: 898px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+}
+
+.main-search-searchPlace input{
+    width: 650px;
+    height: 80px;
+    padding: 0 36px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.main-search-searchPlace button {
+    width: 161px;
+    height: 56px;
+    background-color: var(--secondColor-bgSearchBtn);
+    color: var(--secondColor-fontColor);
+    border-radius: 50px;
+    border: none;
+}
+
+.main-search-tags {
+    width: 898px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 21px
+}
+
+.tags {
+    padding: 16px;
+    background-color: white;
+    margin-left: 12px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: var(--primaryColor-fontColor);
+}
+
+/* Como Funciona */
+
+#main-howWork, .greyZebra, .whiteZebra {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 24px;
+    color: var(--primaryColor-fontColor);
+}
+
+.main-paragraph {
+    width: 936px;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--primaryColor-fontColor);
+}
+
+.main-paragraph strong {
+    font-weight: bold;
+}
+
+.whiteZebra {
+    background-color: var(--mainWhite-bgColor);
+}
+
+.greyZebra {
+    background-color: var(--mainGray-bgColor);
+}
+
+/* Footer */
+footer{
+    height: 5vh;
+    background-color: var(--mainWhite-bgColor);
+}
