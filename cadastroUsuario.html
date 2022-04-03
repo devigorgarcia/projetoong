@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/cadastro.css">
+    <title>ONG OSC</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header-logo">
+            <a href="./index.html"><img src="./src/img/logo.svg" alt="Sem Barreiras Logo" class="header-logoImg"></a>
+            <h1 class="header-title">Sem Barreiras</h1>
+        </div>
+        <div class="header-search">
+            <label for="header-search-input"><input type="search" name="searchInput" id="header-search-input" placeholder="Digite a pesquisa aqui"></label>
+            <label for="header-searchBtn"><button>Pesquisar</button></label>
+        </div>
+        <div class="header-login">
+            <ul id="header-login-area">
+                <li class="header-login-login"><a href="src/html/cadastro.html">ENTRAR</a></li>
+                <li class="header-login-acessibility"><a href="#">Acessibilidade</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <aside id="main-aside">
+            <!-- <img src="../img/cadastro_de_fornecedor.jpg" alt=""> -->
+        </aside>
+        <section id="main-register">
+            <h1 class="register-title">Cadastrar</h1>
+            <span class="register-span">Insira seus dados para criar sua conta</span>
+            <form action="">
+                <fieldset id="form-text">
+                    <label for="form-nome">Nome Completo
+                        <input type="text" id="form-nome">
+                    </label>
+                    <label for="form-email">E-mail
+                        <input type="email" name="email" id="form-email">
+                    </label>
+                    <label for="form-password">Criar Senha
+                        <input type="password" name="password" id="form-password">
+                    </label>
+                </fieldset>
+                <fieldset id="form-itens">
+                    <span class="form-span">Qual seu tipo de deficiência?</span>
+                    <div class="box-item">
+                        <label for="form-checkbox-fisica" class="chk">Física<input type="checkbox" name="fisica" id="form-checkbox-fisica"><span class="check"></span></label>
+                        <label class="chk" for="form-checkbox-auditiva">Auditiva <input type="checkbox" name="auditiva" id="form-checkbox-auditiva"><span class="check"></span></label>
+                        <label class="chk" for="form-checkbox-visual">Visual <input type="checkbox" name="visual" id="form-checkbox-visual"><span class="check"></span></label>
+                        <label class="chk" for="form-checkbox-multipla">Múltipla <input type="checkbox" name="multipla" id="form-checkbox-multipla"><span class="check"></span></label>
+                        <label class="chk" for="form-checkbox-intelectual">Intelectual <input type="checkbox" name="intelectual" id="form-checkbox-intelectual"><span class="check"></span></label>
+                        <label class="chk" for="form-checkbox-nenhuma">Nenhuma <input type="checkbox" name="nenhuma" id="form-checkbox-nenhuma"><span class="check"></span></label>
+                    </div>
+                </fieldset>
+                <label for="form-registerBtn"><button id="registerBtn"><a href="perfil.html">Cadastrar</a></button></label>
+                <section id="main-login">
+                    <span>Já possui conta? <a href="#entrar">Fazer login</a></span>
+                </section>
+            </form>
+        </section>
+    </main>
+    </body>
+</html>
